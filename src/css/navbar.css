@@ -1,0 +1,17 @@
+.navbar{
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+  }
+  .navbar__up-arrow{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 40px;
+  }
+  .nav__link:hover{
+    color: rgb(91, 94, 166);
+    text-decoration: 2px underline rgb(91, 94, 166);;
+  }

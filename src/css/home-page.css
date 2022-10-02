@@ -1,0 +1,22 @@
+.home-page__banner{
+    min-height: 400px;
+    position: relative;
+  }
+  .home-page__title *{
+    font-size: 3.0rem;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  .home-page__title-lighter *{
+    font-size: 2.0rem;
+    font-weight: lighter;
+  }
+  .home-page__img-holder{
+    width: 100%;
+    position: relative;
+  
+  }
+  .home-page__img-holder img{
+    width: 100%;
+    height: auto;
+  }

@@ -1,0 +1,32 @@
+
+.item{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.item__fav-btn{
+    position: absolute;
+    bottom:-10px;
+    left:-10px;
+    padding:0;
+    margin-top: 0;
+}
+.item__img-holder{
+    position: relative;
+}
+.item__img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.item__title{
+    font-size: 1rem;
+    position: relative;
+}
+.item__header{
+    min-height: 55px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
