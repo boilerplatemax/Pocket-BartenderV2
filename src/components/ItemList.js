@@ -13,7 +13,6 @@ export default function ItemList({items}) {
   return (
     
     <Col>
-    
     <Animated animationIn="fadeIn" isVisible={!loading} animationInDuration={1000}>
     <div className='item-list'>
     <Row xs={12} md={6} lg={6} xl={3}>

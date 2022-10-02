@@ -1,7 +1,6 @@
 import React,{useContext} from 'react'
 import { AppContext } from '../App'
 import { MdFavoriteBorder as HeartBorder, MdFavorite as Heart} from "react-icons/md";
-import {Animated} from "react-animated-css";
 export default function FavoriteButton({item}) {
     const {favoriteHandler, favoriteItemIds} = useContext(AppContext)
 

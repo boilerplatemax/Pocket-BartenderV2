@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import {Container, Row, Col, Card,CloseButton} from 'react-bootstrap'
-import axios, { Axios } from 'axios';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import FavoriteButton from '../components/FavoriteButton';
 import { Animated } from 'react-animated-css';
@@ -8,24 +8,25 @@ import { Animated } from 'react-animated-css';
 export default function DrinkPage({url}) {
   const [item, setItem]=useState([])
   const navigate = useNavigate();
-  const id= localStorage.getItem('DRINK_ID')!=null?localStorage.getItem('DRINK_ID'):11007
-  useEffect(()=>{
-    getDrinks()
-  },[])
   
-  const getDrinks= async()=>{
-    try{
-      const data= await axios
-      .get(url+`lookup.php?i=${id}`)
-      .then((response)=>{
-        setItem(response.data.drinks[0])
-      })
-
+  useEffect(()=>{
+    const id= localStorage.getItem('DRINK_ID')!=null?localStorage.getItem('DRINK_ID'):11007
+    const getDrinks= async()=>{
+      try{
+        await axios
+        .get(url+`lookup.php?i=${id}`)
+        .then((response)=>{
+          setItem(response.data.drinks[0])
+        })
+      }
+      catch(e){
+        console.log(e)
+      }
     }
-    catch(e){
-      console.log(e)
-    }
-  }
+    getDrinks()
+  },[url])
+  
+  
 
   const ingredientArray=Object.values(item).splice(17,31)
   const ingredientAmountArray=Object.values(item).splice(32,46)
@@ -41,7 +42,7 @@ export default function DrinkPage({url}) {
           <Row>
           <Col md='5'>
           <div className='img-holder__drink-page'>
-            <Card.Img src={item.strDrinkThumb} style={{height:'100%',objectFit:'cover'}}></Card.Img>
+            <Card.Img src={item.strDrinkThumb} style={{height:'100%',objectFit:'cover'}} alt={item.strDrink}></Card.Img>
             <FavoriteButton item={item}/>
           </div>                 
         </Col>

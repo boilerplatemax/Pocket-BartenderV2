@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import FavoritePage from './pages/FavoritePage'
 import Navigation from './components/Navigation'
-import axios, { Axios } from 'axios';
+import axios from 'axios';
 import {HashRouter, Routes, Route} from 'react-router-dom'
 
 export const AppContext = React.createContext()
@@ -21,6 +21,8 @@ function App() {
 
   const [urlQuery, setUrlQuery]=useState(defaultQuery)
   
+  const [eventToggler, setEventToggler]=useState(false)
+
   const [items, setItems] = useState([{}])
 
   const [loading, setLoading] = useState(false)
@@ -41,23 +43,24 @@ function App() {
   },[favoriteItemIds])
 
   useEffect(()=>{
+    const getDrinks= async()=>{
+      try{
+        setLoading(true)
+        await axios
+        .get(url+urlQuery)
+        .then((response)=>{
+          setItems(response.data.drinks)
+        })
+        setLoading(false)
+      }
+      catch(e){
+        console.log(e)
+      }
+    }
     getDrinks()
-  },[urlQuery])
+  },[urlQuery, eventToggler])
   
-  const getDrinks= async()=>{
-    try{
-      setLoading(true)
-      const data= await axios
-      .get(url+urlQuery)
-      .then((response)=>{
-        setItems(response.data.drinks)
-      })
-      setLoading(false)
-    }
-    catch(e){
-      console.log(e)
-    }
-  }
+
 
   const AppContextValue ={
     favoriteHandler,
@@ -71,7 +74,7 @@ function App() {
 
   function favoriteHandler(id){
     if(favoriteItemIds.includes(id)){
-      setFavoriteItemIds(favoriteItemIds.filter(i=>i!=id))
+      setFavoriteItemIds(favoriteItemIds.filter(i=>i!==id))
     }
     else{
       setFavoriteItemIds([...favoriteItemIds,id])
@@ -83,13 +86,13 @@ function App() {
     }
     else{
       setUrlQuery(defaultQuery)
-      getDrinks()
     }
   }
 
   function randomSearchHandler(){
     setUrlQuery('random.php')
-    getDrinks()
+    setEventToggler((prev)=>!prev)
+
   }
   function scrollToTopHandler() {
 
@@ -97,7 +100,7 @@ function App() {
     
   }
   function searchHandler(query){
-    query!=''?setUrlQuery('search.php?s='+query):setUrlQuery(defaultQuery)
+    query!==''?setUrlQuery('search.php?s='+query):setUrlQuery(defaultQuery)
   }
   function listHandler(query){
     setUrlQuery('filter.php?c='+query)

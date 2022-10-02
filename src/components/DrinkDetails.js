@@ -10,7 +10,7 @@ const navigate = useNavigate();
                             <CloseButton style={{position: 'absolute', right: '0', padding:'10px', backgroundColor:'white'}} onClick={()=>navigate(-1)}/>         
                                 <Col md='6'>
                                 {/* <Card.Title style={{padding:'30px'}}></Card.Title> */}
-                                <Card.Img src={item.strDrinkThumb} style={{height:'100%',objectFit:'cover'}}></Card.Img>
+                                <Card.Img src={item.strDrinkThumb} style={{height:'100%',objectFit:'cover'}} alt={item.strDrink}></Card.Img>
                                 </Col>
                                 <Col md='6'>
                                     <Card.Body>

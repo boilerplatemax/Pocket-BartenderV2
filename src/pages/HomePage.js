@@ -26,7 +26,7 @@ export default function HomePage({resetSearch}){
                         <Col lg={7}>
                         <Animated animationIn="bounceInDown" isVisible={true} animationInDuration={1000} animationInDelay={200}>
                             <div className="home-page__img-holder">
-                                <img src={homeImage}/>
+                                <img src={homeImage} alt='Cocktail girl'/>
                             </div>
                             
                         </Animated>

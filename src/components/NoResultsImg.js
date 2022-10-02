@@ -6,7 +6,7 @@ export default function NoResultsImg() {
     <div>
         <h1>Nothing here...</h1>
         <h2 className='text-muted'>No results found</h2>
-        <img src={lost} className='img__no-results'/>
+        <img src={lost} className='img__no-results' alt='No results'/>
     </div>
   )
 }

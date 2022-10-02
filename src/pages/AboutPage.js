@@ -1,6 +1,5 @@
 import React from "react";
 import {Container, Row, Col} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
 import aboutImage from '../resources/images/aboutimg.png'
 import { Animated } from "react-animated-css";
 
@@ -15,11 +14,11 @@ export default function AboutPage(){
                     <Row>
                         <Col lg={6}>
                         
-                            <img src={aboutImage} className='about__img'/>
+                            <img src={aboutImage} className='about__img' alt='Programmer desk'/>
                         </Col>
                         <Col>
                             <h2>About</h2>
-                            <p>This React App uses the <a href='https://www.thecocktaildb.com/api.php' target="_blank">CocktailDB API</a> to display a wide variety of drinks as well as their drinks and recipes.</p>
+                            <p>This React App uses the <a href='https://www.thecocktaildb.com/api.php' target="_blank" rel="noreferrer">CocktailDB API</a> to display a wide variety of drinks as well as their drinks and recipes.</p>
                             <h2>Features</h2>
                             <ul>
                                 <li>
@@ -38,10 +37,10 @@ export default function AboutPage(){
                                 <h2>Developed By Max Shapovalov</h2>
                                 <ul>
                                 <li>
-                                    <a href='https://www.linkedin.com/in/max-shapovalov-2a93191b8/?originalSubdomain=ca' target="_blank">Github</a>
+                                    <a href='https://www.linkedin.com/in/max-shapovalov-2a93191b8/?originalSubdomain=ca' target="_blank" rel="noreferrer">Github</a>
                                 </li>
                                 <li>
-                                    <a href='https://github.com/boilerplatemax' target="_blank">Linkedin</a>
+                                    <a href='https://github.com/boilerplatemax' target="_blank" rel="noreferrer">Linkedin</a>
                                 </li>
                             </ul>
                         </Col>
