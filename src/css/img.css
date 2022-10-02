@@ -1,0 +1,23 @@
+.img__no-results{
+    width: 100%;
+    height: auto;
+}
+.img-holder__drink-page{
+    position: relative;
+}
+
+.img-hover-zoom {
+    height: auto;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .3s ease-in-out;
+    
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.1) rotate(2deg);
+  }

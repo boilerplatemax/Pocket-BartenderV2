@@ -1,0 +1,26 @@
+@import 'item.css';
+@import 'button.css';
+@import 'search-menu.css';
+@import 'home-page.css';
+@import 'about.css';
+@import 'navbar.css';
+@import 'img.css';
+
+
+:root {
+  --orange-red: #FF5A5F;
+  --metallic-seaweed:#087E8B;
+  --onyx: #3C3C3C;
+  --cultured:#F5F5F5;
+  --opera-mauve:#C1839F;
+  --blue-jeans: #00A6FB;
+  --forest-green:#60A561;
+  --goldenrod: #E6AF2E;
+  --azure:#007FFF;
+}
+*{
+  font-family:Nunito;
+}
+body{
+  overflow-x: hidden;
+}

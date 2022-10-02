@@ -1,0 +1,53 @@
+.btn{
+    background-color: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.btn--primary{
+    padding: 5px 10px;
+    background-color: rgb(91, 94, 166);
+    color: white;
+    border: 4px solid rgb(91, 94, 166);
+}
+.btn--primary:hover{
+    color: rgb(91, 94, 166);
+}
+.btn--icon{
+    font-size: 1.75rem;
+}
+.btn--icon:hover .btn--fav{
+    color: brown;
+}
+.btn--large{
+    font-size: 1.3rem;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+.btn--search-filters{
+    font-size: 1.3rem;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border:1px solid black;
+    background-color: white;
+}
+.btn--search-filters:hover{
+    border:1px solid white;
+    background-color: black;
+    color: white;
+}
+.btn--icon > *{
+    width: 100%;
+    height: auto;
+}
+.btn--fav{
+    background-color: white;
+    padding: 10px;
+    border-top-right-radius: 25px;
+  
+}
+.btn--fav-filled{
+    color: red;
+}
+
