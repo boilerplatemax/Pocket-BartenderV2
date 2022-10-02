@@ -10,8 +10,8 @@ export default function FavoriteButton({item}) {
     <button onClick={()=>favoriteHandler(item.idDrink)} className='button button--icon item__fav-button'>
     {
         isFav?
-        <Heart className='button--fav button--fav-filled'/>:
-        <HeartBorder className='button--fav'/>
+        <Heart className='custom-btn--fav custom-btn--fav-filled'/>:
+        <HeartBorder className='custom-btn--fav'/>
     }
     </button>
   )

@@ -1,53 +1,53 @@
-.button{
+.custom-btn{
     background-color: none;
     border: none;
     padding: 0;
     cursor: pointer;
     z-index: 1;
 }
-.button--primary{
+.custom-btn--primary{
     padding: 5px 10px;
     background-color: rgb(91, 94, 166);
     color: white;
     border: 4px solid rgb(91, 94, 166);
 }
-.button--primary:hover{
+.custom-btn--primary:hover{
     color: rgb(91, 94, 166);
 }
-.button--icon{
+.custom-btn--icon{
     font-size: 1.75rem;
 }
-.button--icon:hover .button--fav{
+.custom-btn--icon:hover .custom-btn--fav{
     color: brown;
 }
-.button--large{
+.custom-btn--large{
     font-size: 1.3rem;
     border-radius: 30px;
     padding: 10px 20px;
 }
-.button--search-filters{
+.custom-btn--search-filters{
     font-size: 1.3rem;
     border-radius: 30px;
     padding: 10px 20px;
     border:1px solid black;
     background-color: white;
 }
-.button--search-filters:hover{
+.custom-btn--search-filters:hover{
     border:1px solid white;
     background-color: black;
     color: white;
 }
-.button--icon > *{
+.custom-btn--icon > *{
     width: 100%;
     height: auto;
 }
-.button--fav{
+.custom-btn--fav{
     background-color: white;
     padding: 10px;
     border-top-right-radius: 25px;
   
 }
-.button--fav-filled{
+.custom-btn--fav-filled{
     color: red;
 }
 
