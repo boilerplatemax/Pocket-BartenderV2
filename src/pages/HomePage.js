@@ -20,7 +20,7 @@ export default function HomePage({resetSearch}){
                             <div className="home-page__title-lighter capitalize">
                                 <h2>Make a Cocktail!</h2>
                             </div>
-                            <a href='#/search'><button className='btn btn--primary btn--large' onClick={()=>resetSearch()}>Explore Drinks</button></a>
+                            <a href='#/search'><button className='button button--primary button--large' onClick={()=>resetSearch()}>Explore Drinks</button></a>
                         </Animated>
                         </Col>
                         <Col lg={7}>

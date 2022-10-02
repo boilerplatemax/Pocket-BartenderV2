@@ -7,11 +7,11 @@ export default function FavoriteButton({item}) {
     const isFav = favoriteItemIds.includes(item.idDrink)
 
   return (
-    <button onClick={()=>favoriteHandler(item.idDrink)} className='btn btn--icon item__fav-btn'>
+    <button onClick={()=>favoriteHandler(item.idDrink)} className='button button--icon item__fav-button'>
     {
         isFav?
-        <Heart className='btn--fav btn--fav-filled'/>:
-        <HeartBorder className='btn--fav'/>
+        <Heart className='button--fav button--fav-filled'/>:
+        <HeartBorder className='button--fav'/>
     }
     </button>
   )

@@ -62,7 +62,7 @@ export default function SearchMenu({items}) {
           <option value="Homemade_Liqueur">Homemade Liqueur</option>
           <option value="Shot">Shot</option>
         </Form.Select>
-        <button className='btn btn--primary' onClick={randomSearchHandler}>Surprise Me</button>
+        <button className='button button--primary' onClick={randomSearchHandler}>Surprise Me</button>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@ export default function SearchMenu({items}) {
         </Col>:
         <div className='search-menu__search-filters'>
         <button
-          className='btn btn--primary btn--large'
+          className='button button--primary button--large'
           onClick={displaySearchMenuHandler}>
           Search Filters 
           <Search/>

@@ -33,7 +33,7 @@ function hoverHandler(currentState){
         </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           {scrollPosition>400&&<Nav className="justify-content-center navbar__up-arrow">
-          <button className='btn btn--icon' onClick={scrollToTopHandler}>
+          <button className='button button--icon' onClick={scrollToTopHandler}>
             <UpArrow/>
           </button>
           </Nav>}
