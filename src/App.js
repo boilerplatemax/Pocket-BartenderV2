@@ -24,7 +24,7 @@ function App() {
     <ThemeContext.Provider value={{theme}}>
 
         <Feed/>
-        <button onClick={()=>setTheme((prev)=>prev==themes.light?themes.dark:themes.light)}>
+        <button onClick={()=>setTheme((prev)=>prev===themes.light?themes.dark:themes.light)}>
           toggle
         </button>
 
