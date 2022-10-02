@@ -1,4 +1,4 @@
-import React,{useContext, useEffect} from 'react'
+import React,{useContext} from 'react'
 import ItemList from '../components/ItemList'
 import SearchMenu from '../components/SearchMenu';
 import {Container, Row, Col, Spinner} from 'react-bootstrap'
