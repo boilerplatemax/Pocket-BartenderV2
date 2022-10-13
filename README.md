@@ -8,7 +8,9 @@ Live demo: https://stupendous-brigadeiros-d5e197.netlify.app/
 - React-Bootstrap framework for front-end
 - Use of React Hooks (useState, useEffect, useNavigate)
 - API Calls to [CocktailDB]([url](https://www.thecocktaildb.com/))
-- useParams hook used in previous version of the app
+- A favourite system
+- Filter/search system
+- Fun CSS animations
 - Responsive user Interface
 
 ## Browse a wide variety of drinks
