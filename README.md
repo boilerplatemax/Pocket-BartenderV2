@@ -2,7 +2,7 @@
 
 ## [Try it here!](pocketbartender.netlify.app/)
 
-![image](pocketbartender.netlify.app/)
+[![image](https://user-images.githubusercontent.com/113940871/211579752-8a44fd80-6fee-472a-a0ff-a3492355b6b8.png)](pocketbartender.netlify.app/)
 
 ## Features
 - React-Bootstrap framework for front-end
