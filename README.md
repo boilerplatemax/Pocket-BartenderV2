@@ -1,8 +1,8 @@
 # Pocket bartender is a handy react app for finding recipes for your favourite cocktails!
 
-Live demo: https://stupendous-brigadeiros-d5e197.netlify.app/
+Live demo: pocketbartender.netlify.app/
 
-![image](https://user-images.githubusercontent.com/113940871/195729477-2ff8a341-882a-412b-af18-6c01ac98be4e.png)
+![image](https://user-images.githubusercontent.com/113940871/195729477-2ff8a341-882a-412b-af18-6c01ac98be4e.png)(pocketbartender.netlify.app/)
 
 ## Features
 - React-Bootstrap framework for front-end
