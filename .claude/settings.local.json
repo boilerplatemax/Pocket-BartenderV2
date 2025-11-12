@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(nul)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(npm start)",
+      "Bash(timeout /t 15 /nobreak)",
+      "Bash(npx tsc:*)",
+      "Bash(npx kill-port:*)",
+      "Bash(ping:*)",
+      "Bash(npm uninstall:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
